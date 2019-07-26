@@ -4,26 +4,26 @@
 Проверьте работу скрипта при a, равном '1', 1, 3.     */
 
 let a = '1';
-if(a == '1'){
+if(a === '1'){
     console.log('Верно');
 }else{
     console.log('Неверно');
 }
 let b = 1;
-if(b == 1){
+if(b === 1){
     console.log('Верно');
 }else{
     console.log('Неверно');
 }
 let c = 3;
-if(c == 3){
+if(c === 3){
     console.log('Верно');
 }else{
     console.log('Неверно');
 }
 
 let p = '1';
-let zxc = (a == '1') ? console.log('Верно') : console.log('Неверно');
+let zxc = (a === '1') ? console.log('Верно') : console.log('Неверно');
 
 
 /* 2. Если переменная item не равна true, то выведите 'Верно', иначе выведите 'Неверно'. Проверьте работу 
@@ -71,7 +71,7 @@ let rty = (n > 3 && n < 12 || m >= 7 && m < 15) ? console.log('Верно') : co
 Определите в какую пору года попадает этот месяц (зима, лето, весна, осень)  */
 
 let month = 12;
-if(month == 12 || month <= 2){
+if(month == 12 || month <= 2 && month > 0){
     console.log('Winter');
 }
 if(month <= 8 && month >= 6){
@@ -88,13 +88,10 @@ if(month <= 11 && month >= 9){
 // 6. Выведите в консоли столбец четных чисел в промежутке от 0 до 100. (используя for или while)
 
 for(let i = 0; i <= 100; i++){
-    if(i % 2 !== 1){
+    if(i % 2 == 0){
         console.log(i);
     }
 };
-
-
-
 
 
 
